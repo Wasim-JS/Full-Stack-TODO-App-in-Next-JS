@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+li{
+  list-style-type: none;
+}
+
+.todos{
+  width: 95%;
+  max-width: 700px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todos form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todos form input{
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  border: 1px solid purple;
+}
+.todos form >button{
+  width: 30%;
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+  border: 1px solid purple;
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  }
+  
+  button{
+    transition: all 0.3s linear;
+    padding: 7px;
+    border-radius: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+
+}
+button:active{
+  transform: scale(0.9);
+}
+.todos .todo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.todoItem{
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+}
+.todoItem div:first-child{
+  flex:2
+}
+.todoItem div:last-child{
+  display: flex;
+  gap: 10px;
+}
+
+.loader{
+  border-top: 2px solid purple;
+  border-radius: 50%;
+  width: 120px;
+  aspect-ratio: 1;
+  animation: rotate .6s linear infinite;
+  margin: auto;
+}
+
+@keyframes rotate {
+
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}

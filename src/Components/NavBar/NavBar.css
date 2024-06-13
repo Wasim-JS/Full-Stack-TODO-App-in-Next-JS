@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        }
+
+        header nav li a{
+            color: white;
+            
+}
+
+
