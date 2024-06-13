@@ -1,9 +1,17 @@
 import { connectDB } from "@/DB/DB"
 import {todoModel} from "@/app/Models/todoModel.js"
-const { NextResponse } = require("next/server")
+import { NextResponse } from "next/server"
+
+;(async function (){
+
+    await connectDB()
+    
+})()
+
+// connect()
 
 export async function POST(req){
-    await connectDB()
+    // await connectDB()
     const data = await req.json()
     try {
         await todoModel.create(data)

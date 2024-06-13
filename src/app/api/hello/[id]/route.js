@@ -2,8 +2,15 @@ import { connectDB } from "@/DB/DB"
 import {todoModel} from "@/app/Models/todoModel.js"
 const { NextResponse } = require("next/server")
 
-export async function DELETE(req,{params}){
+
+;(async function (){
+
     await connectDB()
+    
+})()
+
+export async function DELETE(_,{params}){
+    // await connectDB()
 
     try {
         await todoModel.findByIdAndDelete(params.id)
@@ -25,7 +32,7 @@ export async function DELETE(req,{params}){
 }
 
 export async function PUT(req,{params}){
-    await connectDB()
+    // await connectDB()
 
     try {
 
@@ -49,7 +56,7 @@ export async function PUT(req,{params}){
 }
 
 export async function GET(req,{params}){
-    await connectDB()
+    // await connectDB()
 
     try {
         const todo = await todoModel.findById(params.id)
