@@ -3,11 +3,11 @@ import {todoModel} from "@/app/Models/todoModel.js"
 const { NextResponse } = require("next/server")
 
 
-;(async function (){
+// ;(async function (){
 
-    await connectDB()
+//     await connectDB()
     
-})()
+// })()
 
 export async function DELETE(_,{params}){
     // await connectDB()
