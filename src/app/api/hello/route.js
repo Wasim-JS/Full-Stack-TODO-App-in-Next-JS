@@ -32,7 +32,7 @@ export async function POST(req){
    
 }
 export async function GET(req){
-    await connectDB()
+    // await connectDB()
 
     try {
         const todos = await todoModel.find({})
